@@ -35,5 +35,13 @@ pip install fastapi uvicorn
 uvicorn main:app --reload
 ```
 
+### 6. you 
+
+```json
+{
+  "message": "Hello, world!"
+}
+```
+
 
 
