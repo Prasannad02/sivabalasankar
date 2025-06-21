@@ -213,9 +213,10 @@ span {
 
 .experience-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .experience-container .experience-box {
@@ -225,7 +226,8 @@ span {
     text-align: center;
     border: 0.2rem solid var(--bg-color);
     transition: transform 0.5s ease;
-    min-width: 35rem;
+    min-width: 30rem;
+    max-width: 100%;
 }
 
 .experience-container .experience-box:hover {
@@ -262,9 +264,10 @@ span {
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .services-container .services-box {
@@ -274,7 +277,8 @@ span {
     text-align: center;
     border: 0.2rem solid var(--bg-color);
     transition: transform 0.5s ease;
-    min-width: 35rem;
+    min-width: 30rem;
+    max-width: 100%;
 }
 
 .services-container .services-box:hover {
@@ -326,7 +330,7 @@ span {
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     align-items: center;
     gap: 2.5rem;
 }
@@ -487,19 +491,19 @@ span {
         padding: 7rem 3%;
     }
     .experience-container {
-        grid-template-columns: 1fr; /* 1 column */
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
     .experience-container .experience-box {
-        min-width: 30rem;
+        min-width: 25rem;
     }
     .services {
         padding: 7rem 3%;
     }
     .services-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
     .services-container .services-box {
-        min-width: 30rem;
+        min-width: 25rem;
     }
     .portfolio {
         padding-bottom: 7rem;
@@ -568,7 +572,7 @@ span {
         margin-bottom: 3rem;
     }
     .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
 }
 
